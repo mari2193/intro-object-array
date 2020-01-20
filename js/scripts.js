@@ -3,8 +3,10 @@ window.dataLayer.forEach(function(event) {
   newEvent.innerHTML =
     '<div class="info"><h2 class="title">' +
     event.short_description.fi +
+    event.name.fi +
     '</h2><p class = "desc">' +
     event.description.fi +
-    "</p></div>";
+    event.info_url.fi +
+    +"</p></div>";
   document.getElementById("event-list").appendChild(newEvent);
 });
